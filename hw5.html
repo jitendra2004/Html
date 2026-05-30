@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Health Details Form</h1>
+    <!-- personal information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+        <!-- fullname -->
+        <label for="fullname">Fullname: </label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br>
+        <br>
+        <!-- bate of birth -->
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" id="dob">
+        <br>
+        <br>
+        <!-- gender -->
+        <label for="gender">Gender : </label>
+        <select name="gender" id="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="other">other</option>
+        </select>
+        <br>
+    <br>
+    <!-- phone number -->
+     <label for="phone">Phone Number: </label>
+     <input type="tel" id="phone" name="phone" required>
+    </fieldset>
+    <!-- medical history -->
+    <fieldset>
+        <legend>Medical History</legend>
+        <!-- blood group -->
+        <label for="blood">Blood Group: </label>
+        <select name="blood" id="blood">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select>
+        <br><br>
+        <!-- eyewear -->
+      <label for="eyewear">Do you wear glasses or contact lenses?</label>
+      <br>
+      <input type="radio" name="eyewear" id="eyewear-yes" value="Yes">
+      <label for="eyewear-yes">Yes</label>
+      <input type="radio" name="eyewear" id="eyewear-no" value="no" checked>
+      <label for="eyewear-no">No</label>
+      <br><br>
+      <!-- conditions -->
+      <label for="conditions">Pre-exsiting Conditions: </label>
+      <textarea name="conditions" id="conditions" rows="4" cols="40" placeholder="List any pre-exisiting medical conditions"></textarea>
+      <br><br>
+      <!-- allergies -->
+      <label for="allergies">Allergies:</label>
+      <br>
+      <!-- pollen-->
+      <input type="checkbox" name="allergies" id="pollen" value="pollen">
+      <label for="pollen">Pollen</label>
+      <br>
+      <!-- peanuts -->
+      <input type="checkbox" name="allergies" id="peanuts" value="peanuts">
+      <label for="peanuts">Peanuts</label>
+      <br>
+      <!-- latex -->
+      <input type="checkbox" name="allergies" id="latex" value="latex">
+      <label for="latex">Latex</label>
+      <br>
+      <!-- None -->
+      <input type="checkbox" name="allergies" id="none" value="none">
+      <label for="none">None</label>
+      <br><br>
+      <!-- Current medication -->
+      <label for="medication">Current Medication:</label>
+      <br>
+      <textarea name="medication" id="medication" placeholder="List any current medication" rows="4" cols="40"></textarea>
+    </fieldset>
+    <!-- emergency conctacts  -->
+    <fieldset>
+        <legend>Emergency Contact</legend>
+        <!-- conatct name -->
+         <label for="contact-name">Contact Name:</label>
+         <input type="text" name="contact-name" id="contact-name" required>
+         <br><br>
+         <!-- contact phone -->
+         <label for="contact-phone">Emergency Contact Phone:</label>
+         <input type="tel" name="contact-phone" id="contact-phone" required>
+         <br><br>
+         <!-- relanship to emergency contact -->
+          <label for="emergency-contact">Relationship to Emergency Contact:</label>
+          <input type="tel" name="emergency-contact" id="emergency-contact" required>
+    </fieldset>
+    <button >Sumbit</button>
+</body>
+</html>
